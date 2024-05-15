@@ -1,0 +1,18 @@
+start scrape with this list of websites:
+
+https://findbullionprices.com/dealers/goldclub-direct/products/
+https://findbullionprices.com/dealers/jm-bullion/products/                done    [value.strip() for value in response.css(".product2col .product-detail-region .product-detail-right .payment-section .payment-inner table tbody tr td:nth-child(2)::text").getall() if value.strip()]
+https://findbullionprices.com/dealers/silver.com/products/                  done
+https://findbullionprices.com/dealers/hero-bullion/products/               response.css(".item-overview .price-line p.price::text").get()
+https://findbullionprices.com/dealers/provident-metals/products/            done     response.css(".payment-section .payment-inner table.pricing-table tbody tr td:nth-child(2)::text").get().strip()
+https://findbullionprices.com/dealers/scottsdale-mint/products/            need ask
+https://findbullionprices.com/dealers/bold-precious-metals/products/       solution not getting
+https://findbullionprices.com/dealers/money-metals-exchange/products/      response.css('#pricing-wrap span::text').get()
+https://findbullionprices.com/dealers/silver-gold-bull/products/
+https://findbullionprices.com/dealers/apmex/products/
+https://findbullionprices.com/dealers/bullion-exchanges/products/
+https://findbullionprices.com/dealers/bgasc/products/
+https://findbullionprices.com/dealers/monument-metals/products/
+https://findbullionprices.com/dealers/sd-bullion/products/                  done
+
+And eBay site…
